@@ -19,4 +19,10 @@ python hic_Subtraction.py example/6_10000.cool example/7_10000.cool -fig test.pn
 
 ```
 ## example_result：
+> origin figure  from bin 2000 to 10000
+![avatar](example/6.orign.png)
+![avatar](example/7.orign.png)
+
+> substraction result from bin 2000 to 20000 with different color style
 ![avatar](example/test.png)
+![avatar](example/test1.png)
