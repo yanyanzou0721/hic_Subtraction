@@ -4,7 +4,7 @@
 ## usage：
 
 ```
-python hic_Subtraction.py file1.cool file2.cool -s 2000 -e 20000 -O outdir -fig outfig
+python hic_Subtraction.py file1.cool file2.cool -O outdir -fig outfig
 
 Options:
     -s              default=0               comparasion start bin area
@@ -15,13 +15,14 @@ Options:
 
 ## example:
 ```
-python hic_Subtraction.py example/6_10000.cool example/7_10000.cool -fig test.png
+python hic_Subtraction.py example/6_2500000.cool example/7_2500000.cool -fig 2500000.png
 
 ```
 ## example_result：
-> origin figure  from bin 0 to 2000
+> origin figure  with resolution of 2500000 （species：human）
 > file1
 ![avatar](example/6.2500000.png)
+
 > file2
 ![avatar](example/7.2500000.png)
 
