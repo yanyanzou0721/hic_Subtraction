@@ -25,9 +25,9 @@ def read_in(file_path):
 
 """
   get matrix data then calculate input1 - input2
-  
+
   normalized by log10() with positive and negative signs unchanged
-  
+
 
 """
 
@@ -54,8 +54,8 @@ def process(input1,input2,area_s,area_e,outdir,outfig):
     c2 = read_in(input2)
     arr = get_Subtraction(c1,c2,area_s,area_e)
     get_fig(arr,area_s,area_e,outdir,outfig)
-            
-    
+
+
 @click.command(name="hic_Subtraction")
 @click.argument("input1")
 @click.argument("input2")
@@ -63,7 +63,7 @@ def process(input1,input2,area_s,area_e,outdir,outfig):
               default=0,
               help="comparasion starts area")
 @click.option("area_e","-e",
-              default=2000,
+              default=None,
               help="comparasion starts area")
 @click.option("--outdir", "-O",
     default="./",
@@ -76,6 +76,6 @@ def main_(input1,input2,area_s,area_e,outdir,outfig):
     if not exists(outdir):
         os.mkdir(outdir)
     process(input1,input2,area_s,area_e,outdir,outfig)
-    
+
 if __name__ == "__main__":
     main_()
