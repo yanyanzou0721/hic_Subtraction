@@ -1,6 +1,8 @@
 # **this script is to get the subtraction of two hic matrix**
 > **the input files should be of .cool format with a certain resolution**
 
+## rely：
+> [cooler](https://cooler.readthedocs.io/en/latest/index.html)
 ## usage：
 
 ```
