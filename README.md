@@ -30,4 +30,4 @@ python hic_Subtraction.py example/6_2500000.cool example/7_2500000.cool -fig 250
 
 > file1-file2 substraction result from bin 0 to 2000 with different color style
 > with blue plots means file1's intensity is lower than file2, and hot color ones means in contrast
-![avatar](example/2500000.png)
+![avatar](example/div.png)
